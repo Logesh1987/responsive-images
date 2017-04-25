@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<title>Responsive images</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>Responsive image task</header>
+	<div class="wrapper">
+		<article>
+			<h2>Using CSS Image-Set</h2>
+			<figure class='imgSet'></figure>
+			<p>Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec sollicitudin molestie malesuada.</p>
+		</article>
+		<article>
+			<h2>Using HTML Picture tag</h2>
+			<picture>
+				<source srcset="images/portrait.jpg" media="(max-width: 750px)" sizes="" type="image/jpeg" />
+				<source srcset="images/landscape.jpg" media="(min-width: 751px)" sizes="" type="image/jpeg" />
+				<img src="images/landscape.jpg" alt="Image" />
+			</picture>
+			<p>Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec sollicitudin molestie malesuada.</p>
+		</article>
+		<article>
+			<h2>Using IMG srcset</h2>
+			<figure class='srcSet'>
+				<img src="images/small.jpg" srcset="images/medium.jpg 1024w, images/large.jpg 1600w" alt="">
+			</figure>
+			<p>Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec sollicitudin molestie malesuada.</p>
+		</article>
+		<article>
+			<h2>Using IMG sizes attribute</h2>
+			<figure>
+				<img sizes="(min-width: 768px) 500px, 100%" srcset="images/img_set_small.jpg 500w, images/img_set_low.jpg 1000w, images/img_set_high.jpg 1600w" src="images/img_set_small.jpg" />
+			</figure>
+			<p>Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec sollicitudin molestie malesuada.</p>
+		</article>
+		<article>
+			<h2>Using webp format images</h2>
+			<picture>
+				<source srcset="images/clubmed.webp" type='image/webp'>
+				<img src="images/clubmed.jpg" alt="">
+			</picture>
+			<p>Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec sollicitudin molestie malesuada.</p>
+		</article>
+	</div>
+</body>
+</html>

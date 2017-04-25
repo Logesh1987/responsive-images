@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+body {
+	font-family: 'Abel', sans-serif;
+	counter-reset: section; 
+	margin: 0;
+	padding: 0;
+	background-color: #f2f3f5;
+}
+figure {
+	margin: 0;
+}
+
+header {
+	text-align: center;
+	font-size: 55px;
+	background: #666;
+	padding: 30px;
+	color: #fff;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 42px;
+    margin: 0;
+    padding: 30px 0;
+}
+@media screen and (max-width: 480px) {
+	h2 {font-size: 30px;}
+}
+@media screen and (max-width: 1200px) {
+	p {padding: 20px;}
+}
+h2:before {
+	counter-increment: section;
+	content: '0'counter(section);
+	font-size: 2em;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 20px 10px 0;
+    margin-right: 20px;
+    border-right: 2px solid rgba(0, 0, 0, 0.31);
+}
+p {
+	font-size: 1.5em;
+}
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.imgSet {
+	background-image: url('../images/img_set_low.jpg');
+	background-image: -webkit-image-set(url('../images/img_set_low.jpg') 1x, url('../images/img_set_high.jpg') 2x);
+	width: 100%;
+	padding-bottom: 42%;
+	margin: 20px 0;
+	background-size: 100% auto;
+}
+.srcSet img {
+	width: 100%;
+}
+
+picture {
+	display: block;
+}
+picture * {
+	width: 100%;
+}
